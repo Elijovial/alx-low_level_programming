@@ -58,7 +58,7 @@ void print_magic(unsigned char *e_ident)
 
 		if (index == EI_NIDENT - 1)
 			printf("\n");
-		else
+	else
 			printf(" ");
 	}
 }
@@ -117,8 +117,8 @@ void print_data(unsigned char *e_ident)
  */
 void print_version(unsigned char *e_ident)
 {
-	printf("  Version:     		%d",
-			e_ident[EI_VERSION]);
+	printf("  Version:                           %d",
+		e_ident[EI_VERSION]);
 
 	switch (e_ident[EI_VERSION])
 	{
@@ -182,8 +182,8 @@ void print_osabi(unsigned char *e_ident)
  */
 void print_abi(unsigned char *e_ident)
 {
-	printf("  ABI Version:		%d\n",
-			e_ident[EI_ABIVERSION]);
+	printf("  ABI Version:                       %d\n",
+	       e_ident[EI_ABIVERSION]);
 }
 
 /**

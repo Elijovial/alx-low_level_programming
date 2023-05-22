@@ -18,7 +18,7 @@ putchar(',');
 }
 else
 {
-	putchar(i);
+
 }
 }
 return (0);

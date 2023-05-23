@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
 * main - entry
 * Return: Always 0 (Success)
@@ -6,6 +6,8 @@
 
 int main(void)
 {
-printf("_putchar\n");
+char str[] = "_putchar";
+puts(str);
+puts("\n");
 return (0);
 }

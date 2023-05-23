@@ -1,47 +1,34 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ *main - print all combinations of three different digits
+ *Return: Always 0 (Success)
  */
+
 int main(void)
-
 {
-int left; /*Decarling statement*/
-int right;
-int center;
+int one;
+int ten;
+int hundred;
 
-/*for 0-9 with ASCII*/
-
-for (left = 48; left <= 57; left++)
+for (hundred = '0'; hundred <= '9'; hundred++) /*hundreds place*/
 {
-for (center = left + 1; center <= 57; center++)
+for (ten = (hundred + 1); ten <= '9'; ten++) /*tens=100s+1*/
 {
-for (right = center + 1 ; right <= 57; right++)
-
+for (one = (ten + 1); one <= '9'; one++) /*ones*/
 {
-
-putchar(left); /*print  numbers left, center and rigth ++*/
-putchar (center);
-putchar (right);
-
-/*break program if the condition is true (if is 789=+)*/
-if ((left == 55) && (center == left + 1) && (right == center + 1))
+putchar(hundred);
+putchar(ten);
+putchar(one);
+if (hundred != '7' || ten != '8' || one != '9')
 {
-break; /*terminate the program*/
+putchar(',');
+putchar(' ');
 }
-
-putchar(','); /*print (,)*/
-putchar (' '); /*prirint a space*/
-
-} /*end for #3*/
-
-} /*end for #2*/
-
-} /*end for #1*/
-
-putchar('\n'); /*new line*/
+}
+}
+}
+putchar('\n');
 
 return (0);
-
 }

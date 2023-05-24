@@ -13,12 +13,17 @@ void print_alphabet(void);
 */
 void print_alphabet_x10(void);
 /**
- * _islower(int c) - checks for lowercase character
+ * _islower - checks for lowercase character
  */
 int _islower(int c);
 
 /**
- * _isalpha(int c) - checks for alphabatic character
+ * _isalpha - checks for alphabatic character
  */
 int _isalpha(int c);
+/**
+ * print_sign - print the sign of a number
+ */
+int print_sign(int n);
+
 #endif /* MAIN_H */

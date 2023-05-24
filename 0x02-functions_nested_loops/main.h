@@ -12,5 +12,9 @@ void print_alphabet(void);
  *  print_alphabet_x10 - print lowercase aphabet 10x
 */
 void print_alphabet_x10(void);
+/**
+ * _islower(int c) - checks for lowercase character
+ */
+int _islower(int c);
 
 #endif /* MAIN_H */

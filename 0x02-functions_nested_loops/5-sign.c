@@ -7,18 +7,17 @@
 
 int print_sign(int n)
 {
-	int n;
 if (n > 0)
-	{
+{
 	_putchar('+');
 return (1);
-	}
-elseif(n = 0)
+}
+else if (n == 0)
 	{
 	_putchar('-');
 return (0);
 	}
-elseif(n < -1)
+else if (n < 0)
 	{
 	_putchar('-');
 return (-1);

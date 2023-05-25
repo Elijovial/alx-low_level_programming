@@ -7,7 +7,7 @@
  * Return: in success 1
  */
 
-int _putchar(int c);
+int _putchar(char c);
 
 /**
  * _isupper - checks for uppercase character

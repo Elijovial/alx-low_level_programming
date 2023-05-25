@@ -16,3 +16,11 @@ int _putchar(int c);
  */
 
 int _isupper(int c);
+
+/**
+ * _isdigit - checks for a digit through (0-9)
+ * @c: digit to be checked
+ * Return: 1 if c is a digit and 0 if otherwise
+ */
+
+int _isdigit(int c);

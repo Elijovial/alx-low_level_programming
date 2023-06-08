@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - function that returns the natural root of a number
+ * support_function - function that returns the root
  * @n: integer parameter
  * @root: integer parameter
- * Return: 0
+ * Return: root
  */
 
 int support_function(int n, int root)
@@ -22,6 +22,11 @@ int support_function(int n, int root)
 	return (support_function(n, root + 1));
 	}
 }
+/**
+ * _sqrt_recursion - function that returns the natural root of a number
+ * @n: integer parameter
+ * Return: root
+ */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)

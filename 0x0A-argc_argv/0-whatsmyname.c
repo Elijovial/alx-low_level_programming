@@ -10,6 +10,5 @@
 int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
-	printf("Argument count = %d\n", argc);
 	return (0);
 }

@@ -10,11 +10,11 @@ void free_list(list_t *head)
 {
 	list_t *p;
 
-	p = malloc(sizeof(free_list));
 	while (head != NULL)
 	{
 		p = head;
 		head = head->next;
 		free(p);
 	}
+	free(free_list);
 }

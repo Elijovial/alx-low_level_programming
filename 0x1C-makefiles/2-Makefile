@@ -1,7 +1,10 @@
 CC = gcc
 SRC = main.c school.c
-OBJ = %.o
+OBJ = $(SRC:.c=.o) # Substitution References
 NAME = school
-school:
-	$(CC) $(SRC) -o $(NAME)
-all: school
+
+# Rule all: Build the school executable file
+# 1. Implicity rule to updating .o files
+# 2. Then compile with .o files and executable
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
